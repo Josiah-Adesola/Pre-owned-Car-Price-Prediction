@@ -43,7 +43,7 @@ streamlit==0.55.2
 
 toml==0.10.0
 toolz==0.10.0
-tornado==6.2
+tornado==5.1.1
 typing_extensions==3.3.0
 tzdata==2022.4
 tzlocal==4.2
