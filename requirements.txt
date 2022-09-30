@@ -24,7 +24,7 @@ Pillow==6.2.2
 protobuf==3.18.0rc2
 pyarrow==0.16.0
 pydeck==0.6.2
-Pygments==2.13.0
+Pygments==2.5.2
 Pympler==1.0.1
 pyparsing==3.0.9
 pyrsistent==0.18.1
