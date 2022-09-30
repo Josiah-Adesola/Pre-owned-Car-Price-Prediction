@@ -1,16 +1,16 @@
 import numpy as np
-import gzip, pickle, pickletools
+import pickle 
 import pandas as pd
+import bz2 
 
 import streamlit as st
 
 #loading the saved model
 
 
-filename = "random_forest.pkl"
-with gzip.open(filename, 'rb') as f:
-    p = pickle.Unpickler(f)
-    rf = p.load()
+ifile = bz2.BZ2File("rf_model.pkl",'rb')
+rf = pickle.load(ifile)
+ifile.close()
 
 
 def price_prediction(km_driven, fuel, seller_type, transmission, owner, mileage, engine, max_power, seats, age):
